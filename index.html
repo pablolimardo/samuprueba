@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Inteligencia Artificial en la Educación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <style>
+        html, body {
+            height: 100%; /* Asegura que el cuerpo ocupe toda la altura de la ventana */
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column; /* Alinea los elementos en columna */
+        }
+        .main-content {
+            flex: 1; /* Permite que el contenido principal crezca para ocupar el espacio disponible */
+            display: flex;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            height: 100vh; /* Extiende la barra lateral hasta el fondo */
+            box-sizing: border-box;
+            position: fixed; /* Fija la barra lateral en la ventana */
+            top: 0; /* Coloca la barra en la parte superior */
+            left: 0; /* Coloca la barra en el borde izquierdo */
+        }
+        .sidebar a {
+            display: block;
+            padding: 10px 0;
+            color: #003366;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative;
+        }
+        .sidebar a:hover {
+            background-color: #e0e0e0;
+        }
+        .sidebar .icons {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .sidebar .icons img {
+            width: 40px;
+            height: 40px;
+            display: block;
+        }
+        .content {
+            margin-left: 220px; /* Deja espacio para la barra lateral fija */
+            padding: 20px;
+            max-width: calc(100% - 240px); /* Ajusta el ancho del área de contenido */
+            box-sizing: border-box;
+        }
+        .separator {
+            border-left: 1px solid #ccc;
+            height: 100vh;
+            margin-right: 20px;
+        }
+        h1 {
+            color: #003366;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 48px;
+            text-align: center;
+            margin-top: 0;
+            position: relative;
+        }
+        h1::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 4px;
+            background-color: #003366;
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            z-index: -1;
+        }
+        h1 span {
+            display: block;
+            font-size: 48px;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #024d98;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 36px;
+            text-align: center;
+            margin-top: 40px;
+            position: relative;
+            padding-left: 40px;
+        }
+        h2::before {
+            content: '•';
+            font-size: 24px;
+            color: #024d98;
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        p, ul, ol {
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        ul, ol {
+            padding: 0;
+            list-style-position: inside;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            width: 800px;
+            height: auto;
+            object-fit: cover;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #ffffff;
+            border-top: 1px solid #ccc;
+        }
+        .footer p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #003366;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="sidebar">
+            <a href="#introduccion">Introducción</a>
+            <a href="#ventajas">Ventajas de su uso</a>
+            <a href="#desventajas">Desventajas</a>
+            <a href="#como-usar">Cómo usar estas nuevas herramientas digitales</a>
+            <a href="#alfabetizacion-digital">Alfabetización digital</a>
+            <a href="#integrar">Cómo integrar la inteligencia artificial en la educación</a>
+            <a href="#conclusion">Conclusión</a>
+            <div class="icons">
+                <img src="https://cdn-icons-png.flaticon.com/512/12222/12222589.png" alt="Icono 1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5TkjoJ8VXhlLtC6PaHoaHZ7gYduddoR9T0VWYtnJvV-ro2ZdfC49TOnwrHFhIy-REm70&usqp=CAU" alt="Icono 2">
+                <img src="https://cdn.prod.website-files.com/64f85dc3e20068093f54e701/651190f9021ca70225749d24_Luzia-opt.png" alt="Icono 3">
+            </div>
+        </div>
+        <div class="content">
+            <h1>LA INTELIGENCIA ARTIFICIAL EN LA EDUCACIÓN<span>IMPACTO, VENTAJAS Y DESAFÍOS</span></h1>
+            
+            <h2 id="introduccion">Introducción</h2>
+            <p>En esta oportunidad, hablaremos sobre cómo las inteligencias artificiales (IA) afectan a las instituciones educativas y a sus respectivos alumnos y trabajadores. Además, exploraremos sus ventajas y desventajas, así como las formas de aplicarlas en la educación y en nuestra rutina diaria.</p>
+            <p>Como sabemos, la implementación de las inteligencias artificiales no es algo reciente; se ha estado investigando desde la década de 1950. El término "inteligencia artificial" fue acuñado por John McCarthy en 1956 durante una conferencia en Dartmouth. En esa época, se intentó desarrollar programas que pudieran imitar ciertas habilidades humanas, como jugar al ajedrez y resolver problemas. Con el tiempo, estos esfuerzos se orientaron a replicar el pensamiento y razonamiento humano, lo que generó el descontento de varios intelectuales que expresaron su preocupación sobre las posibles consecuencias futuras de esta tendencia. Un ejemplo notable de estas preocupaciones es el caso de Stephen Hawking.</p>
+            
+            <div class="image-container">
+                <img src="https://observatorio.tec.mx/wp-content/uploads/2024/04/Las-5-ideas-principales-en-IA-1024x1024.png" alt="Imagen Ejemplo">
+            </div>
+
+            <h2 id="ventajas">Ventajas de su uso</h2>
+            <p>En la actualidad, los estudiantes utilizan la inteligencia artificial de diversas maneras para resolver tanto las actividades que presentan los profesores como para tareas diarias, tales como cocinar, planificar rutinas de gimnasio, etc. Hoy en día, la gente se ha vuelto muy dependiente de esta nueva tecnología, tanto que se está considerando su implementación como una herramienta de uso diario en las escuelas, empezando por la alfabetización digital.</p>
+            
+            <h2 id="desventajas">Desventajas</h2>
+            <p>El uso masivo de la inteligencia artificial para todas las tareas puede ser perjudicial para el usuario, ya que podría dejarlo incapaz de realizar tareas por sí mismo. Además, la IA carece de creatividad y tiene costos significativos de mantenimiento y programación. Otros problemas incluyen las preocupaciones sobre la privacidad que surgen con el uso de estas tecnologías.</p>
+            
+            <h2 id="como-usar">Cómo usar estas nuevas herramientas digitales</h2>
+            <p>Para comprender cómo funcionan las IA y aprender a utilizarlas de manera efectiva, es útil basarse en experiencias personales y en las recomendaciones que las propias IA ofrecen. A continuación, se presentan algunos consejos para obtener resultados más eficientes:</p>
+            <ul>
+                <li>Realiza preguntas específicas sobre el tema que desees conocer para obtener respuestas más rápidas y concisas.</li>
+                <li>Proporciona Contexto: Si estás continuando una conversación anterior, recuerda ofrecer un breve resumen o contexto para refrescar la memoria.</li>
+                <li>Usa Ejemplos o Casos: Si estás tratando un problema o una situación específica, incluir ejemplos o casos concretos facilita una mejor comprensión y respuesta.</li>
+                <li>Mantén la Concisión: Trata de ser claro y directo, evitando detalles innecesarios que puedan desviar la conversación.</li>
+                <li>Verifica la respuesta: Investiga si la respuesta proporcionada es adecuada para tu tarea.</li>
+            </ul>
+            <p>Siguiendo estos consejos, puedes hacer que la conversación con tu nuevo maestro-digital sea más eficiente para tu trabajo. Estos consejos son aplicables a cualquier IA.</p>
+            
+            <h2 id="alfabetizacion-digital">Alfabetización digital</h2>
+            <p>Según la UNESCO, la alfabetización digital se refiere a "la capacidad de acceder, gestionar, comprender, integrar, comunicar, evaluar y crear información mediante la utilización segura y pertinente de las tecnologías digitales para el empleo, un trabajo decente y la iniciativa empresarial". También se puede definir como la capacidad de interactuar de manera accesible con la IA mediante el aprovechamiento de herramientas, sistemas y marcos relacionados.</p>
+            <p>La alfabetización en IA tiene tres elementos esenciales:</p>
+            <ol>
+                <li>Comprender las capacidades de esta tecnología.</li>
+                <li>Utilizarla para resolver problemas.</li>
+                <li>Aplicarla en contextos socioculturales.</li>
+            </ol>
+            <p>Este método se ha comenzado a aplicar a los niños desde una edad temprana para que se familiaricen con estas nuevas tecnologías. Actualmente, se han observado resultados positivos, fomentando la creatividad de los infantes, enseñándoles a investigar y formular preguntas específicas por sí mismos, y promoviendo la investigación colaborativa. Sin embargo, esta implementación presenta desafíos tanto para maestros como para estudiantes.</p>
+            
+            <div class="image-container">
+                <img src="https://observatorio.tec.mx/wp-content/uploads/2024/04/Anadir-un-titulo-3-1024x1024.png" alt="Imagen de Alfabetización Digital">
+            </div>
+
+            <h2 id="integrar">Cómo integrar la inteligencia artificial en la educación</h2>
+            <p>Hoy en día, existe una línea difusa sobre cómo, cuándo y qué implementar en el ámbito educativo. Aunque existen plataformas y aplicaciones con integraciones de IA, esto no significa que sean la solución completa para mejorar la calidad educativa a nivel básico con inteligencia artificial.</p>
+            <p>Varios estudios indican que, durante la educación preescolar, la integración de esta tecnología en juguetes como robots y kits de programación apoya los primeros pasos en la alfabetización tecnológica. Entre las herramientas utilizadas para la implementación de IA en las aulas de educación básica se encuentran: PopBots, Teachable Machine, Jobo Robot, Anki Cozmo Bot, PlushPal, RoBoHon, PictoBlox, entre otras.</p>
+            <p>A través de la gamificación con IA (juegos como "piedra, papel o tijera", actividades lúdicas y música), los estudiantes desarrollan el andamiaje necesario para aprender sobre sistemas basados en el conocimiento (knowledge-based systems), aprendizaje automático supervisado e IA generativa, adquiriendo y reconociendo los conocimientos básicos sobre la inteligencia artificial y sus implicaciones éticas.</p>
+            <p>En términos de diseño instruccional para integrar la alfabetización en IA, se requieren varios aspectos, como la pedagogía, el contenido, las herramientas y materiales de clase, la evaluación, entre otros. Es importante destacar que la alfabetización en IA no requiere que los estudiantes aborden términos o temas complejos, o que adquieran capacidades avanzadas de programación y aprendizaje automático, sino que desarrollen una comprensión sólida de las capacidades, limitaciones, aplicaciones y consideraciones éticas de la inteligencia artificial, para que puedan desenvolverse plenamente en la era digital.</p>
+            
+            <h2 id="conclusion">Conclusión</h2>
+            <p>Las inteligencias artificiales tienen sus pros y sus contras, pero con la capacitación adecuada de los profesores y el apoyo del gobierno, pueden facilitar nuestro día a día. Muchas personas dependen de estas tecnologías, ya sea para su trabajo profesional o para su educación. Por ello, en mi opinión, ya es demasiado tarde para prohibir estas nuevas tecnologías en el mundo actual. Sin embargo, no debemos asumir que las tecnologías emergentes resolverán todos nuestros problemas; más bien, debemos considerarlas como un apoyo adicional para realizar tareas específicas.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; Samuel Solis</p>
+        <p>Fuentes: <a href="https://blogs.ia">Blogs.ia</a>, <a href="https://europarl.europa.eu">europarl.europa.eu</a></p>
+    </div>
+</body>
+</html>
